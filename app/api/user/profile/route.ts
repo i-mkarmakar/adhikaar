@@ -2,8 +2,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import prisma from '@/lib/prisma'
 import { cookies } from 'next/headers'
 import jwt from 'jsonwebtoken'
-import { UserRole } from '@/app/generated/prisma'
 import bcrypt from 'bcryptjs'
+import { UserRole } from '@/app/generated/prisma/enums'
 
 export async function GET() {
     try {
